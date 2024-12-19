@@ -7,8 +7,8 @@ public class Main {
 
         Printer printer = new Printer();
 
-        Thread oddThread = new Thread(() -> printer.printOdd(), "OddThread");
-        Thread evenThread = new Thread(() -> printer.printEven(), "EvenThread");
+        Thread oddThread = new Thread(() -> printer.printOdd());
+        Thread evenThread = new Thread(() -> printer.printEven());
 
         oddThread.start();
         evenThread.start();

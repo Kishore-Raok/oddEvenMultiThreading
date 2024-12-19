@@ -20,7 +20,7 @@ class Printer {
                     }
                 }
                 if(num <= 100) {
-                System.out.println(Thread.currentThread().getName() + ": " + num);
+                System.out.println("OddThread : " + num);
                 num++;
                 }
                 isOddTurn = false;  // Toggle the turn
@@ -44,7 +44,7 @@ class Printer {
                     }
                 }
                 if(num <= 100) {
-                    System.out.println(Thread.currentThread().getName() + ": " + num);
+                    System.out.println("EvenThread : " + num);
                     num++;
                 }
                 isOddTurn = true;  // Toggle the turn
